@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0%;
+}
+#nav1 {
+  grid-area: nav1;
+}
+#nav2 {
+  grid-area: nav2;
+}
+#nav3 {
+  grid-area: nav3;
+}
+#nav4 {
+  grid-area: nav4;
+}
+#nav5 {
+  grid-area: nav5;
+}
+#nav6 {
+  grid-area: nav6;
+}
+#nav7 {
+  grid-area: nav7;
+}
+@media (max-width: 900px) {
+  .grids {
+    grid-template-areas:
+      "nav1 "
+      "nav2 "
+      "nav3 "
+      "nav4 "
+      "nav5 "
+      "nav6 "
+      "nav7 ";
+  }
+  body {
+    background-image: url(https://source.unsplash.com/1920x1080/?nightsky);
+  }
+}
+@media (min-width: 900px) {
+  .grids {
+    grid-template-areas:
+      "nav1  nav2 "
+      "nav3  nav4 "
+      "nav5  nav6 "
+      "nav7  nav7";
+  }
+  body {
+    background-color: black;
+  }
+}
+.item {
+  margin: 12px;
+  text-align: center;
+  color: white;
+  font-size: medium;
+}
+.item:hover {
+  color: orangered;
+  text-transform: uppercase;
+}
+.grids {
+  margin: 100px auto;
+  display: grid;
+  height: 80vh;
+  width: 70vw;
+  grid-gap: 10px;
+}
+.itemdev {
+  align-self: centre;
+  justify-self: centre;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
